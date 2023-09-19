@@ -1,3 +1,3 @@
-export default function Main() {
-  return <>React project</>;
+export default function Home() {
+  return <>Home</>;
 }

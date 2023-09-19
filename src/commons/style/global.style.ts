@@ -1,22 +1,21 @@
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
-import { mediaQuery } from "./mediaQuery.style";
+import { Common } from "./emotion.style";
 
 export const GlobalStyle = css`
-  // 100, 300, 400, 500, 700
   @font-face {
-    font-family: "SpoqaHanSansNeo";
-    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff")
+    font-family: "GmarketSansMedium";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
       format("woff");
     font-weight: normal;
     font-style: normal;
   }
   @font-face {
-    font-family: "EnjoyStories";
-    font-weight: 300;
+    font-family: "InkLipquid";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff")
+      format("woff");
+    font-weight: normal;
     font-style: normal;
-    src: url("https://cdn.jsdelivr.net/gh/webfontworld/tvn/EnjoyStoriesLight.ttf")
-      format("truetype");
   }
 
   * {
@@ -28,8 +27,8 @@ export const GlobalStyle = css`
     }
   }
   body {
-    font-family: "SpoqaHanSansNeo", Arial, sans-serif;
-    font-weight: 500;
+    font-family: "GmarketSansMedium", sans-serif;
+    font-weight: 400;
     font-size: 16px;
     color: #333333;
   }
@@ -64,23 +63,12 @@ export const GlobalStyle = css`
     line-height: 23px;
     color: #bdbdbd;
   }
-  ${mediaQuery[1]} {
-    input::placeholder,
-    textarea::placeholder {
-      font-size: 14px;
-      line-height: 23px;
-    }
+  &.highlight {
+    color: ${Common.color.point};
   }
 `;
 
 export const Container = styled.div`
   width: 1080px;
   margin: 0 auto;
-  ${mediaQuery[0]} {
-    padding: 0 30px;
-    width: 100%;
-  }
-  ${mediaQuery[2]} {
-    padding: 0 20px;
-  }
 `;
