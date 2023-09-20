@@ -1,6 +1,10 @@
 import { atom } from "recoil";
 
-// export const accessTokenState = atom({
-//   key: "accessTokenState",
-//   default: "",
-// });
+export const isModeState = atom({
+  key: "isModeState",
+  default: true,
+});
+export const isOpenState = atom({
+  key: "isOpenState",
+  default: true,
+});

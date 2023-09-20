@@ -1,5 +1,4 @@
 import { css } from "@emotion/react";
-import styled from "@emotion/styled";
 import { Common } from "./emotion.style";
 
 export const GlobalStyle = css`
@@ -30,7 +29,7 @@ export const GlobalStyle = css`
     font-family: "GmarketSansMedium", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color: #333333;
+    color: ${Common.color.light_text};
   }
   em {
     font-style: normal;
@@ -66,9 +65,7 @@ export const GlobalStyle = css`
   &.highlight {
     color: ${Common.color.point};
   }
-`;
-
-export const Container = styled.div`
-  width: 1080px;
-  margin: 0 auto;
+  &.cursor_point {
+    cursor: pointer;
+  }
 `;
