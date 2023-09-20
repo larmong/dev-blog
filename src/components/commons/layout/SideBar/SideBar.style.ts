@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import { Common } from "../../../../commons/style/emotion.style";
+import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 
 export const Wrapper = styled.div`
   transition: 0.3s ease-out;
@@ -13,11 +14,10 @@ export const Wrapper = styled.div`
   padding: ${(props) => (props.isOpen ? "40px" : "40px 20px")};
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 `;
 
 export const Logo = styled.h1`
-  margin: 0 auto;
+  margin: 0 auto 100px auto;
   width: 100%;
   height: 20px;
   background-image: url("/images/larmong.svg");
@@ -26,7 +26,18 @@ export const Logo = styled.h1`
   background-position: center;
 `;
 
+// Menu
+export const MenuWrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 1.1em;
+  text-transform: uppercase;
+`;
+
+// Bottom
 export const BottomGroup = styled.div`
+  margin-top: auto;
   display: flex;
   flex-direction: ${(props) => (props.isOpen ? "row" : "column")};
   gap: 30px;
