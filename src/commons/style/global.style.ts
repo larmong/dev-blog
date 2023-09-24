@@ -44,11 +44,15 @@ export const GlobalStyle = css`
     cursor: pointer;
     background: #fff;
   }
+  input {
+    border: none;
+    color: ${Common.color.light_text};
+  }
   button:focus,
   input:focus,
   textarea:focus {
     outline: none;
-    border: 1.3px solid #0d8f68;
+    border: none;
     &.bottomBorder {
       border: none;
       border-bottom: 1.3px solid #0d8f68;
@@ -56,10 +60,7 @@ export const GlobalStyle = css`
   }
   input::placeholder,
   textarea::placeholder {
-    font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 23px;
     color: #bdbdbd;
   }
   &.highlight {

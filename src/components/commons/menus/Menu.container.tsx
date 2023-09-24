@@ -9,8 +9,12 @@ export const Menu = (props) => {
     setMenuState((prov: boolean) => !prov);
   };
 
+  const onClickMoveToPage = () => {
+    window.open(`/${props.menu.url}`, "_self");
+  };
+
   return (
-    <Wrapper>
+    <Wrapper onClick={onClickMoveToPage}>
       <span className="cursor_point" onClick={onClickChangeMode}>
         {props.menu.icon}
         {props.menu.menu}

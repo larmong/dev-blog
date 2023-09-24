@@ -1,9 +1,10 @@
 export const Common = {
   color: {
-    point: "#FF8E8E",
+    point: "#e55b62",
     // Light Mode
     light_default: "#eeeeee",
     light_gray: "#bbbbbb",
+    light_darkGray: "#666666",
     light_text: "#333333",
     // Dark Mode
     dark_default: "#333333",
@@ -11,7 +12,8 @@ export const Common = {
     dark_text: "#ffffff",
   },
   line: {
-    style: `1px solid #ebeae6`,
+    board: `1px solid #bbbbbb`,
+    post: `1px solid #dddddd`,
   },
   hover: {
     text: "0.8",

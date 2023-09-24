@@ -16,7 +16,7 @@ export const Contents = styled.div`
 
 export const Page = styled.div`
   min-height: calc(100% - 38px);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  //border: 1px solid rgba(0, 0, 0, 0.1);
 `;
 export const Copy = styled.p`
   display: flex;

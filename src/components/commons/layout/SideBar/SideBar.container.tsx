@@ -24,23 +24,19 @@ export const SideBar = () => {
     {
       icon: <FaReact />,
       menu: "react",
-      url: "/",
+      url: "react",
       open: true,
       subMenu: [
-        {
-          menu: "서브메뉴1",
-          url: "/",
-        },
-        {
-          menu: "서브메뉴2",
-          url: "/",
-        },
+        // {
+        //   menu: "서브메뉴1",
+        //   url: "/",
+        // },
       ],
     },
     {
       icon: <RiJavascriptFill />,
       menu: "Javascript",
-      url: "/",
+      url: "javascript",
       open: false,
       subMenu: [],
     },
@@ -52,8 +48,8 @@ export const SideBar = () => {
       <S.Logo></S.Logo>
       {/*  메뉴  */}
       <S.MenuWrap>
-        {menu_list.map((menu) => (
-          <Menu menu={menu} />
+        {menu_list.map((menu, index) => (
+          <Menu key={index} menu={menu} />
         ))}
       </S.MenuWrap>
       {/*  하단  */}
