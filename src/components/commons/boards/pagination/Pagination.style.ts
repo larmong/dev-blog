@@ -31,9 +31,8 @@ export const NextPage = styled.span``;
 
 export const Page = styled.span`
   padding-top: 2px;
-
-  &.on {
-    background: ${Common.color.point};
-    color: #fff;
-  }
+  background: ${(props) =>
+    props.isActive ? `${Common.color.point}` : "transparent"};
+  color: ${(props) =>
+    props.isActive ? "#ffffff" : `${Common.color.light_text}`};
 `;

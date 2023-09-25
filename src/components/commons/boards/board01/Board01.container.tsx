@@ -1,7 +1,6 @@
 import {
   BoardBody,
   BoardBottom,
-  BoardBottomFirst,
   BoardHead,
   BoardTitle,
   Wrapper,
@@ -15,6 +14,34 @@ import { useState } from "react";
 export const Board01 = (props) => {
   const [token, setToken] = useState(false);
   const posts = [
+    {
+      no: 14,
+      id: "14",
+      date: "2023.09.24",
+      title: "공통 게시글 제목 테스트입니다.",
+      content: "공통 게시글 컨텐츠 테스트입니다.",
+    },
+    {
+      no: 13,
+      id: "13",
+      date: "2023.09.24",
+      title: "공통 게시글 제목 테스트입니다.",
+      content: "공통 게시글 컨텐츠 테스트입니다.",
+    },
+    {
+      no: 12,
+      id: "12",
+      date: "2023.09.24",
+      title: "공통 게시글 제목 테스트입니다.",
+      content: "공통 게시글 컨텐츠 테스트입니다.",
+    },
+    {
+      no: 11,
+      id: "11",
+      date: "2023.09.24",
+      title: "공통 게시글 제목 테스트입니다.",
+      content: "공통 게시글 컨텐츠 테스트입니다.",
+    },
     {
       no: 10,
       id: "10",
