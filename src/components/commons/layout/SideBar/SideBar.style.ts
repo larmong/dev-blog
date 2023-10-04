@@ -1,6 +1,5 @@
 import styled from "@emotion/styled";
 import { Common } from "../../../../commons/style/emotion.style";
-import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 
 export const Wrapper = styled.div`
   transition: 0.3s ease-out;

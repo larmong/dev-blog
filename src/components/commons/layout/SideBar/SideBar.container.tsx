@@ -3,15 +3,13 @@ import { MdDarkMode, MdLightMode } from "react-icons/md";
 import { LuArrowLeftToLine } from "react-icons/lu";
 import { useRecoilState } from "recoil";
 import { isModeState, isOpenState } from "../../../../commons/store/store";
-import { FaReact } from "react-icons/fa";
 import { RiJavascriptFill } from "react-icons/ri";
-import { useState } from "react";
+import { FaReact } from "react-icons/fa";
 import { Menu } from "../../menus/Menu.container";
 
 export const SideBar = () => {
   const [isMode, setIsMode] = useRecoilState(isModeState);
   const [isOpen, setIsOpen] = useRecoilState(isOpenState);
-  const [menuState, setMenuState] = useState(false);
 
   const onClickChangeMode = () => {
     setIsMode((prov: boolean) => !prov);
